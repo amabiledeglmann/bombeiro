@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anamnese</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Sora:wght@700&display=swap');
+
+        body {
+            background-color: white;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+
+
+        }
+
+
+        .roxo {
+            background-color: #3532AB;
+            width: 100%;
+            height: 18vh;
+            display: flex;
+            border-bottom: 3px solid black;
+            justify-content: space-between;
+
+        }
+
+        .tituloocorrencia {
+            font-family: 'Raleway', sans-serif;
+            font-size: 70px;
+            border-radius: 1px;
+            color: white;
+            -webkit-text-stroke: 3px black;
+
+
+        }
+
+        .caixalogog {
+            height: 50px;
+        }
+
+        .caixatitulo {
+            margin-top: 33px;
+        }
+
+        .caixamed {
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+
+        .divulgar {
+            position: absolute;
+            top: 120px;
+            left: 1320px;
+            color: white;
+        }
+        .roxinho {
+            width: 500px;
+            height: 40px;
+            background-color: #3532AB;
+            margin-top: 40px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+
+
+        }
+
+
+        .tituloanam {
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            border-radius: 1px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+
+        }
+        .caixainforma {
+            border: 5px solid #3532AB;
+            margin-top: 14px;
+            padding: 2%;
+            width: 850px;
+            height: 53vh;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+        .proximo input {
+            width: 160px;
+            height: 7vh;
+            margin-top: -14px;
+            margin-left: 426%;
+            background-color: #3532AB;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+        }
+
+        .voltar input {
+            width: 160px;
+            height: 7vh;
+            margin-top: -55px;
+            margin-left: -434%;
+            background-color: #3532AB;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+        }
+
+        .caixa1
+        {
+            width: 425px;
+            height: 53vh;
+            font-size: 13px;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .caixa2
+        {
+           
+           
+            width: 425px;
+            height: 53vh;
+            font-size: 13px;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+        .sn
+        {
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            
+        }
+        .sn2
+        {
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+        .sn3
+        {
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            
+        }
+        .voltar input:hover {
+            transform: scale(1.05);
+            background-color: black;
+        }
+        .proximo input{
+            transform: scale(1.05);
+            background-color: black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="roxo">
+        <div class="caixalogog">
+            <img src="logog.png" id="logoG" width=145px>
+        </div>
+
+        <div class="caixatitulo">
+            <span class="tituloocorrencia"> HISTÓRICO DA OCORRÊNCIA</span>
+        </div>
+
+        <div class="caixamed">
+            <img src="logomed.png" id="logomed" width="80px"><br>
+        </div>
+    </div>
+    <div class="divulgar">
+        Divulgar p/ Imprensa:<input type="checkbox">SIM<input type="checkbox">NÃO
+    </div>
+    <div class="roxinho">
+        <div class="tituloroxinho">
+            <span class="tituloanam"> ANAMNESE DA EMERGÊNCIA MÉDICA </span>
+        </div>
+    </div>
+
+    <div class="caixainforma">
+        <div class="caixa1">
+            <div class="oqaconteceu">O QUE ACONTECEU (SINAIS E SINTOMAS)</div>
+        
+            <form> <textarea name="mensagem"></textarea></form>
+            <br><br>
+            <div class="aconteceu">ACONTECEU OUTRAS VEZES</div>
+            <div class="sn">
+                <input type="checkbox"> SIM 
+                <input type="checkbox"> NÃO
+            </div>
+            <br><br>
+            <div class="oqaconteceu">A QUANTO TEMPO ISSO ACONTECEU</div>
+            <form> <textarea name="mensagem"></textarea></form>
+            <br><br>
+            <div class="aconteceu">POSSUI ALGUM PROBLEMA DE SAÚDE</div>
+            <div class="sn2">
+                <input type="checkbox"> SIM 
+                <input type="checkbox"> NÃO
+            </div>
+            <br><br>
+            <div class="oqaconteceu">QUAIS</div>
+            <form> <textarea name="mensagem"></textarea></form>
+
+        </div>
+        <div class="caixa2">
+            <div class="aconteceu">FAZ USO DE MEDICAÇÃO</div>
+            <div class="sn3">
+                <input type="checkbox"> SIM 
+                <input type="checkbox"> NÃO
+            </div>
+            <br><br>
+            <div class="oqaconteceu">HORÁRIO ÚLTIMA MEDICAÇÃO</div>
+            <form> <textarea name="mensagem"></textarea></form>
+            <div class="oqaconteceu">QUAIS</div>
+            <form> <textarea name="mensagem"></textarea></form>
+            <br><br>
+            <div class="oqaconteceu">ALÉRGICO A ALGUMA COISA</div>
+            <form> <textarea name="mensagem"></textarea></form>
+            <br><br>
+            <div class="oqaconteceu">INGERIU ALIMENTO OU LÍQUIDO ≥ 6</div>
+            <form> <textarea name="mensagem"></textarea></form>
+            <div class="oqaconteceu">QUAIS</div>
+            <form> <textarea name="mensagem"></textarea></form>
+        </div>
+    </div>
+
+    <div class="proximo">
+        <input type="button" value=" PRÓXIMA">
+    </div>
+    <div class="voltar">
+        <input type="button" value=" VOLTAR">
+    </div>
+    
+
+
+</body>
+
+</html>

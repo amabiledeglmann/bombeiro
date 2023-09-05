@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Sora:wght@700&display=swap');
+
+        body {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .roxo {
+            background-color: #3532AB;
+            width: 100%;
+            height: 18vh;
+            display: flex;
+            border-bottom: 3px solid black;
+            justify-content: space-between;
+
+        }
+
+        .tituloocorrencia {
+            font-family: 'Raleway', sans-serif;
+            font-size: 70px;
+            border-radius: 1px;
+            color: white;
+            -webkit-text-stroke: 3px black;
+
+
+        }
+
+        .caixalogog {
+            height: 50px;
+        }
+
+        .caixatitulo {
+            margin-top: 33px;
+        }
+
+        .caixamed {
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+
+        .divulgar {
+            position: absolute;
+            top: 120px;
+            left: 1300px;
+            color: white;
+        }
+
+        .caixatermo {
+            background-color: #3532AB;
+            width: 600px;
+            height: 40px;
+            margin-top: 30px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .titulotermo {
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+
+        }
+
+        .caixabotao
+        {
+            width: 100%;
+            height: 7vh;
+            margin-top: 570px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        
+        .voltar input {
+            width: 160px;
+            height: 7vh;
+            margin-left: 26px;
+            background-color: #3532AB;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+        }
+        .proximo input {
+            width: 160px;
+            height: 7vh;
+            margin-top: -2px;
+            margin-left: 1213px;
+            background-color: #3532AB;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+        }
+
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: black;
+        }
+
+       
+
+    </style>
+</head>
+
+<body>
+    <div class="roxo">
+        <div class="caixalogog">
+            <img src="logog.png" id="logoG" width=145px>
+        </div>
+
+        <div class="caixatitulo">
+            <span class="tituloocorrencia"> HISTÓRICO DA OCORRÊNCIA</span>
+        </div>
+
+        <div class="caixamed">
+            <img src="logomed.png" id="logomed" width="80px"><br>
+        </div>
+    </div>
+    <div class="divulgar">
+        DIVULGAR P/ IMPRENSA:<input type="checkbox">SIM<input type="checkbox">NÃO
+    </div>
+    <div class="caixabotao">
+    <div class="voltar">
+        <input type="button" value=" VOLTAR">
+    </div>
+    <div class="proximo">
+        <input type="button" value=" PRÓXIMA">
+    </div>
+</div>
+</body>
+
+</html>

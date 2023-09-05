@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo de Recusa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Sora:wght@700&display=swap');
+
+        body {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .roxo {
+            background-color: #3532AB;
+            width: 100%;
+            height: 18vh;
+            display: flex;
+            border-bottom: 3px solid black;
+            justify-content: space-between;
+
+        }
+
+        .tituloocorrencia {
+            font-family: 'Raleway', sans-serif;
+            font-size: 70px;
+            border-radius: 1px;
+            color: white;
+            -webkit-text-stroke: 3px black;
+
+
+        }
+
+        .caixalogog {
+            height: 50px;
+        }
+
+        .caixatitulo {
+            margin-top: 33px;
+        }
+
+        .caixamed {
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+
+        .divulgar {
+            position: absolute;
+            top: 120px;
+            left: 1300px;
+            color: white;
+        }
+
+        .caixatermo {
+            background-color: #3532AB;
+            width: 600px;
+            height: 40px;
+            margin-top: 30px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .titulotermo {
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+
+        }
+
+        .caixainforma {
+            border-left: 5px solid #3532AB;
+            margin-top: 14px;
+            padding: 2%;
+            width: 850px;
+            height: 53vh;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .textorecusa
+        {
+            font-size: 20px;
+            font-family:'Raleway', sans-serif;
+
+        }
+
+        .proximo input {
+            width: 160px;
+            height: 7vh;
+            margin-top: 34px;
+            margin-left: 120%;
+            background-color: #3532AB;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+        }
+
+        .voltar input {
+            width: 160px;
+            height: 7vh;
+            margin-top: -52px;
+            margin-left: -40.5%;
+            background-color: #3532AB;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+        }
+        .voltar input:hover {
+            transform: scale(1.05);
+            background-color: black;
+        }
+        .proximo input{
+            transform: scale(1.05);
+            background-color: black;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="roxo">
+        <div class="caixalogog">
+            <img src="logog.png" id="logoG" width=145px>
+        </div>
+
+        <div class="caixatitulo">
+            <span class="tituloocorrencia"> HISTÓRICO DA OCORRÊNCIA</span>
+        </div>
+
+        <div class="caixamed">
+            <img src="logomed.png" id="logomed" width="80px"><br>
+        </div>
+    </div>
+    <div class="divulgar">
+        DIVULGAR P/ IMPRENSA:<input type="checkbox">SIM<input type="checkbox">NÃO
+    </div>
+
+    <div class="caixatermo">
+        <span class="titulotermo"> TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE </span>
+    </div>
+    <form method="post" action="">
+        <div class="caixainforma">
+          <div class="textorecusa">
+            <br>
+            EU, <input type="text" style="width: 700px;"> <br>
+            PORTADOR DA IDENTIDADE N° <input type="text"  style="width: 445px;"> <br>
+            NA QUALIDADE DE VITIMA/PACIENTE, USANDO DOS DIREITOS QUE ALEI ME GARANTE,<br>
+             ME RECUSO NESTE ATO OATENDIMENTO E/OU TRANSPORTE OFERECIDO PELOS <br>
+              BOMBEIROS VOLUNTARIOS DE GUARAMIRIM/SC, E ASSUMO, INDIVIDUALMENTE A <br>
+               RESPONSABILIDADE PELAS CONSEQUENCIAS QUE POSSAM OCORRER POR RAZAO DA <br>
+               MINHA RECUSA. DECLARO QUE FUI DEVIDAMENTE INFORMADO SOBRE O <br>
+               PROCEDIMENTO PELO QUAL EU DEVERIA ME SUBMETER E ALERTADO SOBRE OS RISCOS <br>
+                À SAÚDE DA SUA NÃO REALIZAÇÃO.
+                <br><br>
+                ASS: <input type="text" style="width: 600px;"><BR>
+                TESTEMUNHA: <input type="text" style="width: 600px;"><BR>
+               DOC: <input type="text" style="width: 600px;"><BR>
+               TESTEMUNHA: <input type="text" style="width: 600px;"><BR>
+               DOC: <input type="text" style="width: 600px;"><BR>
+
+          </div>
+        </div>
+        <div class="proximo">
+            <input type="button" value=" PRÓXIMA">
+        </div>
+        <div class="voltar">
+            <input type="button" value=" VOLTAR">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
