@@ -10,7 +10,7 @@ $confirmPassword=$_POST["confirmPassword"];
 
 $comando = $pdo->prepare("INSERT INTO usuários VALUES ('$firstname', '$lastname', '$email', '$number', '$password', '$confirmPassword')");
 $resultado = $comando->execute();
-header("Location:telacadastro.html");
+header("Location:telalogin.html");
 
 
 
