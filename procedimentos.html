@@ -23,7 +23,7 @@
             flex-direction: column;
             margin: 0;
             overflow-x: hidden;
-           overflow-y: hidden;
+            overflow-y: hidden;
 
 
         }
@@ -134,23 +134,22 @@
             font-family: 'Raleway', sans-serif;
         }
 
-        .proximo input {
-            width: 160px;
-            height: 7vh;
-            margin-top: -2px;
-            margin-left: 427%;
+        .btn {
             background-color: #3532AB;
-            border-radius: 25px;
-            display: flex;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
-            align-content: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            border: none !important;
+            transition: all linear 160ms;
             cursor: pointer;
-            font-family: 'Raleway', sans-serif;
-            font-size: 20px;
-            color: white;
-            -webkit-text-stroke: 1px black;
+            margin: 0 !important;
+
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: black;
+
         }
 
         .voltar input {
@@ -171,11 +170,8 @@
             color: white;
             -webkit-text-stroke: 1px black;
         }
+
         .voltar input:hover {
-            transform: scale(1.05);
-            background-color: black;
-        }
-        .proximo input{
             transform: scale(1.05);
             background-color: black;
         }
@@ -204,113 +200,117 @@
             <span class="tituloproced"> PROCEDIMENTOS EFETUADOS </span>
         </div>
     </div>
-    <div class="quadradobranco">
-        <div class="caixa1">
-            <input name="asp" type="checkbox"> ASPIRAÇÃO  <br><br>
-            <input name="ini" type="checkbox"> AVALIAÇÃO INICIAL<br><br>
-            <input name="dir" type="checkbox"> AVALIAÇÃO DIRIGIDA <br><br>
-            <input name="cont" type="checkbox"> AVALIAÇÃO CONTINUADA<br><br>
-            <input name="rautek" type="checkbox"> CHAVE DE RAUTEK <br><br>
-            <input name="guedel" type="checkbox"> CÂNULA DE GUEDEL<br><br>
-            <input name="va" type="checkbox"> DESOBSTRUÇÃO DE V.A.<br><br>
-            <input name="dea" type="checkbox"> EMPREGO DO D.E.A.<br><br>
-            <input name="riscos" type="checkbox"> GERENCIAMENTO DE RISCOS<br><br>
-            <input name= "fer" type="checkbox"> LIMPEZA DE FERIMENTO<br><br>
-            <input name="cura" type="checkbox"> CURATIVOS<br><br>
-            <input name="compr" type="checkbox"> COMPRENSSIVO<br><br>
-           
 
-
-        </div>
-        <div class="caixa2">
-            <input name="escr" type="checkbox"> ENCRAVAMENTO<br><br>
-            <input name="ocu" type="checkbox"> OCULAR<br><br>
-            <input name= "quei" type="checkbox"> QUEIMADURA <br><br>
-            <input name= "sim" type="checkbox"> SIMPLES<br><br>
-            <input name= "pont" type="checkbox"> 3 PONTAS<br><br>
-            <input name= "imo" type="checkbox"> IMOBILIZAÇÕES:
-            <select id="imobilizações" name="imobilizações">
-                <option value="QUADRIL"> QUADRIL</option>
-                <option value="CERVICAL"> CERVICAL</option>
-                <option value="MEMBRO INF. DIR."> MEMBRO INF. DIR.</option>
-                <option value="MEMBRO INF. ESQ."> MEMBRO INF. ESQ.</option>
-                <option value="MEMBRO SUP. DIR."> MEMBRO SUP. DIR.</option>
-                <option value="MEMBRO SUP. ESQ."> MEMBRO SUP. ESQ.</option><br><br>
-            </select>
-            <br><br>
-            <input name="infd" type="checkbox"> MEMBRO INF. DIR.<br><br>
-            <input name="infe" type="checkbox"> MEMBRO INF. ESQ.<br><br>
-            <input name="supd" type="checkbox"> MEMBRO SUP. DIR.<br><br>
-            <input name="supe" type="checkbox"> MEMBRO SUP. ESQ.<br><br>
-            <input name="maca" type="checkbox"> MACA SOBRE RODAS<br><br>
-            <input name="rig" type="checkbox"> MACA RÍGIDA<br><br>
-          
+    <form action="procedimentos.php" method="post">
+        <div class="quadradobranco">
+            <div class="caixa1">
+                <input name="asp" type="checkbox"> ASPIRAÇÃO <br><br>
+                <input name="ini" type="checkbox"> AVALIAÇÃO INICIAL<br><br>
+                <input name="dir" type="checkbox"> AVALIAÇÃO DIRIGIDA <br><br>
+                <input name="cont" type="checkbox"> AVALIAÇÃO CONTINUADA<br><br>
+                <input name="rautek" type="checkbox"> CHAVE DE RAUTEK <br><br>
+                <input name="guedel" type="checkbox"> CÂNULA DE GUEDEL<br><br>
+                <input name="va" type="checkbox"> DESOBSTRUÇÃO DE V.A.<br><br>
+                <input name="dea" type="checkbox"> EMPREGO DO D.E.A.<br><br>
+                <input name="riscos" type="checkbox"> GERENCIAMENTO DE RISCOS<br><br>
+                <input name="fer" type="checkbox"> LIMPEZA DE FERIMENTO<br><br>
+                <input name="cura" type="checkbox"> CURATIVOS<br><br>
+                <input name="compr" type="checkbox"> COMPRENSSIVO<br><br>
 
 
 
-        </div>
-        <div class="caixa3">
-            <input name="pon" type="checkbox"> PONTE<br><br>
-            <input name="capa" type="checkbox"> RETIRADO CAPACETE<br><br>
-            <input name="rcp" type="checkbox"> R.C.P.<br><br>
-            <input name="rola" type="checkbox"> ROLAMENTO 90°<br><br>
-            <input name="rolam"type="checkbox"> ROLAMENTO 180° <br><br>
-            <input name="tom" type="checkbox"> TOMADA DECISÃO<br><br>
-            <input type="checkbox"> TRATADO CHOQUE <br><br>
-            <input type="checkbox"> USO DE CÂNULA<br><br>
-            <input type="checkbox"> USO COLAR:
-            <select id="tamanho" name="tamanho">
-                <option value="P"> P</option>
-                <option value="M"> M</option>
-                <option value="G"> G</option>
-            </select>
-            <br><br>
-            <input type="checkbox"> USO KED<br><br>
-            <input type="checkbox"> USO TTF<br><br>
-            <input type="checkbox"> VENTILAÇÃO SUPORTE<br><br>
+            </div>
+            <div class="caixa2">
+                <input name="escr" type="checkbox"> ENCRAVAMENTO<br><br>
+                <input name="ocu" type="checkbox"> OCULAR<br><br>
+                <input name="quei" type="checkbox"> QUEIMADURA <br><br>
+                <input name="sim" type="checkbox"> SIMPLES<br><br>
+                <input name="pont" type="checkbox"> 3 PONTAS<br><br>
+                <input name="imo" type="checkbox"> IMOBILIZAÇÕES:
+                <select id="imobilizações" name="imobilizações">
+                    <option value="QUADRIL"> QUADRIL</option>
+                    <option value="CERVICAL"> CERVICAL</option>
+                    <option value="MEMBRO INF. DIR."> MEMBRO INF. DIR.</option>
+                    <option value="MEMBRO INF. ESQ."> MEMBRO INF. ESQ.</option>
+                    <option value="MEMBRO SUP. DIR."> MEMBRO SUP. DIR.</option>
+                    <option value="MEMBRO SUP. ESQ."> MEMBRO SUP. ESQ.</option><br><br>
+                </select>
+                <br><br>
+                <input name="infd" type="checkbox"> MEMBRO INF. DIR.<br><br>
+                <input name="infe" type="checkbox"> MEMBRO INF. ESQ.<br><br>
+                <input name="supd" type="checkbox"> MEMBRO SUP. DIR.<br><br>
+                <input name="supe" type="checkbox"> MEMBRO SUP. ESQ.<br><br>
+                <input name="maca" type="checkbox"> MACA SOBRE RODAS<br><br>
+                <input name="rig" type="checkbox"> MACA RÍGIDA<br><br>
 
 
 
 
-        </div>
-        <div class="caixa4">
-         
-            <input type="checkbox"> OXIGENIOTERAPIA LPM: <form> <textarea name="mensagem"></textarea></form>
-            <br><br>
-            <input type="checkbox"> REANIMADOR LPM: <form> <textarea name="mensagem"></textarea></form>
-            <br>
-            <input type="checkbox"> MEIOS AUXILIARES:
-            <select id="auxilio" name="auxilio">
-                <option value="CELESC"> CELESC</option>
-                <option value="DEF.CIVIL"> DEF.CIVIL</option>
-                <option value="IGP/PC"> IGP/PC</option>
-            </select>
-            <input type="checkbox"> POLÍCIA:
-            <select id="policia" name="policia">
-                <option value="CIVIL"> CIVIL</option>
-                <option value="MILITAR"> MILITAR</option>
-                <option value="PRE"> PRE</option>
-                <option value="PRF"> PRF</option>
-            </select>
-            <input type="checkbox"> SAMU:
-            <select id="samu" name="samu">
-                <option value="USA"> USA</option>
-                <option value="USB"> USB</option>
-            </select>
-            <br><br>
-            <input type="checkbox"> CIT<br><br>
-            <input type="checkbox">OUTRO: <br><br>
-            <form> <textarea name="mensagem"></textarea></form>
+            </div>
+            <div class="caixa3">
+                <input name="pon" type="checkbox"> PONTE<br><br>
+                <input name="capa" type="checkbox"> RETIRADO CAPACETE<br><br>
+                <input name="rcp" type="checkbox"> R.C.P.<br><br>
+                <input name="rola" type="checkbox"> ROLAMENTO 90°<br><br>
+                <input name="rolam" type="checkbox"> ROLAMENTO 180° <br><br>
+                <input name="tom" type="checkbox"> TOMADA DECISÃO<br><br>
+                <input name="choq" type="checkbox"> TRATADO CHOQUE <br><br>
+                <input name="canu" type="checkbox"> USO DE CÂNULA<br><br>
+                <input name="colar" type="checkbox"> USO COLAR:
+                <select id="tamanho" name="tamanho">
+                    <option value="P"> P</option>
+                    <option value="M"> M</option>
+                    <option value="G"> G</option>
+                </select>
+                <br><br>
+                <input name="ked" type="checkbox"> USO KED<br><br>
+                <input name="ttf" type="checkbox"> USO TTF<br><br>
+                <input name="vent" type="checkbox"> VENTILAÇÃO SUPORTE<br><br>
 
 
 
-        </div>
 
-        
+            </div>
+            <div class="caixa4">
 
-    </div>
-    <div class="proximo">
-        <input type="button" value=" PRÓXIMA">
+                <input name="oxi" type="checkbox"> OXIGENIOTERAPIA LPM: <form> <textarea name="mensagem"></textarea>
+                </form>
+                <br><br>
+                <input name="rean" type="checkbox"> REANIMADOR LPM: <form> <textarea name="mensagem"></textarea></form>
+                <br>
+                <input name="auxi" type="checkbox"> MEIOS AUXILIARES:
+                <select id="auxilio" name="auxilio">
+                    <option value="CELESC"> CELESC</option>
+                    <option value="DEF.CIVIL"> DEF.CIVIL</option>
+                    <option value="IGP/PC"> IGP/PC</option>
+                </select>
+                <input name="poli" type="checkbox"> POLÍCIA:
+                <select id="policia" name="policia">
+                    <option value="CIVIL"> CIVIL</option>
+                    <option value="MILITAR"> MILITAR</option>
+                    <option value="PRE"> PRE</option>
+                    <option value="PRF"> PRF</option>
+                </select>
+                <input name="samu" type="checkbox"> SAMU:
+                <select id="samu" name="samu">
+                    <option value="USA"> USA</option>
+                    <option value="USB"> USB</option>
+                </select>
+                <br><br>
+                <input name="cit" type="checkbox"> CIT<br><br>
+                <input name="outro" type="checkbox">OUTRO: <br><br>
+                <form> <textarea name="mensagem"></textarea></form>
+
+
+
+            </div>
+
+
+
+            <input type="submit" value="Gravar" class="btn" />
+    </form>
+
+
     </div>
     <div class="voltar">
         <input type="button" value=" VOLTAR">
