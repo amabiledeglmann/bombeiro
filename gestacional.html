@@ -162,32 +162,33 @@
     <div class="caixaanamnsegesta">
         <span class="tituloanamnse"> ANAMNSE GESTACIONAL</span>
     </div>
-    <form method="post" action="">
+    <form method="post" action="gestacional.php">
         <div class="caixainforma">
-            PERÍODO DA GESTAÇÃO: <input type="text"> <br><br>
-            FEZ PRÊ-NATAL? <input type="checkbox"> SIM <input type="checkbox"> NÃO
+            PERÍODO DA GESTAÇÃO: <input name=periodo type="varchar"> <br><br>
+            FEZ PRÊ-NATAL? <input name=natal type="checkbox"> SIM <input type="checkbox"> NÃO
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOME DO
-            MÉDICO: <input type="text"><br><br>
-            EXISTE POSSIBILIDADE DE COMPLICAÇÕES? <input type="checkbox"> SIM <input type="checkbox"> NÃO <br><br>
-            PRIMEIRO FILHO? <input type="checkbox"> SIM <input type="checkbox"> NÃO
+            MÉDICO: <input name= medico type="varchar"><br><br>
+            EXISTE POSSIBILIDADE DE COMPLICAÇÕES? <input name= complicacoes type="checkbox"> SIM <input type="checkbox"> NÃO <br><br>
+            PRIMEIRO FILHO? <input name= primeiro type="checkbox"> SIM <input type="checkbox"> NÃO
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QUANTOS: <input
-                type="number"><br><br>
-            QUE HORAS INICIARAM AS CONTRAÇÕES: <input type="time"> <br><br>
-            TEMPO DE CONTRAÇÕES: <input type="time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INTERVALO:
-            <input type="time"><br><br>
-            SENTE PRESSÃO NA REGIÃO DO QUADRIL OU VONTADE DE EVACUAR: <input type="checkbox"> SIM <input
+               name= quantos type="varchar"><br><br>
+            QUE HORAS INICIARAM AS CONTRAÇÕES: <input name= contracoes type="time"> <br><br>
+            TEMPO DE CONTRAÇÕES: <input name= tempo type="time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INTERVALO:
+            <input name=intervalo type="time"><br><br>
+            SENTE PRESSÃO NA REGIÃO DO QUADRIL OU VONTADE DE EVACUAR: <input name=evacuar type="checkbox"> SIM <input
                 type="checkbox"> NÃO <br><br>
-            JÁ HOUVE RUPTURA DA BOLSA? <input type="checkbox"> SIM <input type="checkbox"> NÃO <br><br>
-            FOI FEITO INSPEÇÃO VISUAL? <input type="checkbox"> SIM <input type="checkbox"> NÃO <br><br>
-            PARTO REALIZADO? <input type="checkbox"> SIM <input type="checkbox"> NÃO
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HORA DO NASCIMENTO: <input type="time"> <br><br>
-            SEXO DO BEBE: <input type="checkbox"> FEM <input type="checkbox"> MASC
+            JÁ HOUVE RUPTURA DA BOLSA? <input name= bolsa type="checkbox"> SIM <input type="checkbox"> NÃO <br><br>
+            FOI FEITO INSPEÇÃO VISUAL? <input name=visual type="checkbox"> SIM <input type="checkbox"> NÃO <br><br>
+            PARTO REALIZADO? <input name=parto type="checkbox"> SIM <input type="checkbox"> NÃO
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HORA DO NASCIMENTO: <input name=nascimento type="time"> <br><br>
+            SEXO DO BEBE: <input name=sexo type="checkbox"> FEM <input type="checkbox"> MASC
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOME DO BEBE:
-            <input type="text"><br><br>
+            <input name="sexo" type="varchar"><br><br>
+
+
+            <input type="submit" value=" GRAVAR" class="btn" />
         </div>
-        <div class="proximo">
-            <input type="button" value=" PRÓXIMA">
-        </div>
+        
         <div class="voltar">
             <input type="button" value=" VOLTAR">
         </div>

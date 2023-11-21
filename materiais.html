@@ -8,7 +8,7 @@
     <title>Materiais</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Sora:wght@700&display=swap');
-        
+
         @media only screen and (max-device-width: 900px) {
             /* .menu { width:100%; } */
         }
@@ -145,19 +145,19 @@
             font-family: 'Raleway', sans-serif;
         }
 
-        
-            .divinformacoes2{
+
+        .divinformacoes2 {
             background-color: #ffffff;
             margin-top: 2px;
             padding: 2%;
             width: 408px;
             height: 50vh;
             font-family: 'Raleway', sans-serif;
-        
-            }
-        
 
-       
+        }
+
+
+
         .proximo input {
             width: 160px;
             height: 7vh;
@@ -241,89 +241,84 @@
 
         </div>
     </div>
-    <form method="post" action="">
-            <div class="caixaataduras1">
-                <div class="divinformacoes1">
-                    <input type="checkbox"> ATADURAS:
-                    <select id="tamanho" name="tamanho">
-                        <option value="P"> 5</option>
-                        <option value="M"> 12</option>
-                        <option value="G"> 20</option>
-                    </select>
-                   <input type="number" style="width: 30px;">
-                    <br><br>
-                    <input type="checkbox"> CATETER TP. ÓCULOS <input type="number" style="width: 30px;">
-                    <br><br>
-                    <input type="checkbox"> COMPRENSSA COMUM <input type="number" style="width: 30px;">
-                    <br><br>
-                    <input type="checkbox"> KITS
-                    <select id="tamanho" name="tamanho">
-                        <option value="P"> H</option>
-                        <option value="M"> P</option>
-                        <option value="G"> Q</option>
-                    </select>
-                    <input type="number" style="width: 30px;">
-                    <br><br>
-                    <input type="checkbox"> LUVAS DESC. (PARES) <input type="number" style="width: 30px;">
-                     <br><br>
-                    <input type="checkbox"> COMPRENSSA COMUM <input type="number" style="width: 30px;">
-                    <br><br>
-                    <input type="checkbox"> MÁSCARA DESC. <input type="number" style="width: 30px;">
-                     <br><br>
+    <form method="post" action="materiais.php">
+        <div class="caixaataduras1">
+            <div class="divinformacoes1">
+                <input name= ata type="checkbox"> ATADURAS:
+                <select id="tamanho" name="tamanho">
+                    <option value="P"> 5</option>
+                    <option value="M"> 12</option>
+                    <option value="G"> 20</option>
+                </select>
+                <input type="number" style="width: 30px;">
+                <br><br>
+                <input name=cate type="checkbox"> CATETER TP. ÓCULOS <input type="number" style="width: 30px;">
+                <br><br>
+                <input name=compr type="checkbox"> COMPRENSSA COMUM <input type="number" style="width: 30px;">
+                <br><br>
+                <input name=kits type="checkbox"> KITS
+                <select id="tamanho" name="tamanho">
+                    <option value="P"> H</option>
+                    <option value="M"> P</option>
+                    <option value="G"> Q</option>
+                </select>
+                <input type="number" style="width: 30px;">
+                <br><br>
+                <input name=luvas type="checkbox"> LUVAS DESC. (PARES) <input type="number" style="width: 30px;">
+                <br><br>
+                <input name= comu type="checkbox"> COMPRENSSA COMUM <input type="number" style="width: 30px;">
+                <br><br>
+                <input name=masc type="checkbox"> MÁSCARA DESC. <input type="number" style="width: 30px;">
+                <br><br>
 
             </div>
 
             <div class="caixaataduras2">
                 <div class="divinformacoes2">
-                    <input type="checkbox"> BASE DO ESTABILIZA  <input type="number"  style="width: 30px;"> <br><br>
-                    <input type="checkbox"> COLAR 
+                    <input name= base type="checkbox"> BASE DO ESTABILIZA <input type="number" style="width: 30px;"> <br><br>
+                    <input name=colar1 type="checkbox"> COLAR
                     <select id="tamanho" name="tamanho">
                         <option value="P"> N</option>
                         <option value="M"> PP</option>
                         <option value="G"> P</option>
                     </select>
-                    <input type="number"  style="width: 30px;">
+                    <input type="number" style="width: 30px;">
                     <br><br>
-                    <input type="checkbox"> COLAR 
+                    <input name=colar2 type="checkbox"> COLAR
                     <select id="tamanho" name="tamanho">
                         <option value="P"> M</option>
                         <option value="M"> G</option>
                     </select>
-                    <input type="number"  style="width: 30px;">
+                    <input type="number" style="width: 30px;">
                     <br><br>
-                    <input type="checkbox"> COXINS ESTABILIZA <input type="number"  style="width: 30px;"> <br><br>
-                    <input type="checkbox"> KED
+                    <input name=coxin type="checkbox"> COXINS ESTABILIZA <input type="number" style="width: 30px;"> <br><br>
+                    <input name=ked type="checkbox"> KED
                     <select id="tamanho" name="tamanho">
                         <option value="P"> ADUAL. </option>
                         <option value="M"> INFA. </option>
                     </select>
-                    <input type="number"  style="width: 30px;">
+                    <input type="number" style="width: 30px;">
                     <br><br>
-                    <input type="checkbox"> MACA RÍGIDA <input type="number"  style="width: 30px;"> <br><br>
-                    <input type="checkbox"> T.T.F.
+                    <input name=maca type="checkbox"> MACA RÍGIDA <input type="number" style="width: 30px;"> <br><br>
+                    <input name=ttf type="checkbox"> T.T.F.
                     <select id="tamanho" name="tamanho">
                         <option value="P"> ADUAL. </option>
                         <option value="M"> INFA. </option>
                     </select>
-                    <input type="number"  style="width: 30px;"> <br><br>
-                    <input type="checkbox"> TIRANTE ARANHA <input type="number"  style="width: 30px;"> <br><br>
-                    <input type="checkbox"> TIRANTE DE CABEÇA <input type="number"  style="width: 30px;"> <br><br>
-                    <input type="checkbox"> CÂNULA <input type="number"  style="width: 30px;"> <br><br>
-                    
+                    <input type="number" style="width: 30px;"> <br><br>
+                    <input name="tirantea" type="checkbox"> TIRANTE ARANHA <input type="number" style="width: 30px;"> <br><br>
+                    <input name=tirantec type="checkbox"> TIRANTE DE CABEÇA <input type="number" style="width: 30px;"> <br><br>
+                    <input name= canula type="checkbox"> CÂNULA <input type="number" style="width: 30px;"> <br><br>
 
 
-
-
+                    <input type="submit" value=" GRAVAR" class="btn" />
                 </div>
             </div>
+    </form>
 
-        </div>
-        <div class="proximo">
-            <input type="button" value=" PRÓXIMA">
-        </div>
-        <div class="voltar">
-            <input type="button" value=" VOLTAR">
-        </div>
+    <div class="voltar">
+        <input type="button" value=" VOLTAR">
+    </div>
 </body>
 
 </html>
