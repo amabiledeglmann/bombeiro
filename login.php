@@ -13,7 +13,7 @@ $comando = $pdo->prepare("SELECT * FROM usuários WHERE email = '$email' and sen
 
     if($n>0)
     {
-        header("Location:procedimentos.html");
+        header("Location:dadospaciente.html");
 
     }
     else

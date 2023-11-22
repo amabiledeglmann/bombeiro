@@ -232,57 +232,56 @@
             <span class="tituloanam"> ANAMNESE DA EMERGÊNCIA MÉDICA </span>
         </div>
     </div>
-
+<form method="post" action="anamnese.php">
     <div class="caixainforma">
         <div class="caixa1">
             <div class="oqaconteceu">O QUE ACONTECEU (SINAIS E SINTOMAS)</div>
         
-            <form> <textarea name="mensagem"></textarea></form>
+            <form> <textarea name=aconteceu></textarea></form>
             <br><br>
             <div class="aconteceu">ACONTECEU OUTRAS VEZES</div>
             <div class="sn">
-                <input type="checkbox"> SIM 
-                <input type="checkbox"> NÃO
+                <input name= sim type="checkbox"> SIM 
+                <input name= nao type="checkbox"> NÃO
             </div>
             <br><br>
             <div class="oqaconteceu">A QUANTO TEMPO ISSO ACONTECEU</div>
-            <form> <textarea name="mensagem"></textarea></form>
+            <form> <textarea name=tempo></textarea></form>
             <br><br>
             <div class="aconteceu">POSSUI ALGUM PROBLEMA DE SAÚDE</div>
             <div class="sn2">
-                <input type="checkbox"> SIM 
-                <input type="checkbox"> NÃO
+                <input name=sim1 type="checkbox"> SIM 
+                <input name=nao1 type="checkbox"> NÃO
             </div>
             <br><br>
             <div class="oqaconteceu">QUAIS</div>
-            <form> <textarea name="mensagem"></textarea></form>
+            <form> <textarea name=quais></textarea></form>
 
         </div>
         <div class="caixa2">
             <div class="aconteceu">FAZ USO DE MEDICAÇÃO</div>
             <div class="sn3">
-                <input type="checkbox"> SIM 
-                <input type="checkbox"> NÃO
+                <input name=sim2 type="checkbox"> SIM 
+                <input name=nao2 type="checkbox"> NÃO
             </div>
             <br><br>
             <div class="oqaconteceu">HORÁRIO ÚLTIMA MEDICAÇÃO</div>
-            <form> <textarea name="mensagem"></textarea></form>
+            <form> <textarea name=medicacao></textarea></form>
             <div class="oqaconteceu">QUAIS</div>
-            <form> <textarea name="mensagem"></textarea></form>
+            <form> <textarea name=quais2></textarea></form>
             <br><br>
             <div class="oqaconteceu">ALÉRGICO A ALGUMA COISA</div>
-            <form> <textarea name="mensagem"></textarea></form>
+            <form> <textarea name=alergico></textarea></form>
             <br><br>
             <div class="oqaconteceu">INGERIU ALIMENTO OU LÍQUIDO ≥ 6</div>
-            <form> <textarea name="mensagem"></textarea></form>
+            <form> <textarea name=ingereiu></textarea></form>
             <div class="oqaconteceu">QUAIS</div>
-            <form> <textarea name="mensagem"></textarea></form>
+            <form> <textarea name=quais3></textarea></form>
         </div>
+        <input type="submit" value=" GRAVAR" class="btn" />
     </div>
-
-    <div class="proximo">
-        <input type="button" value=" PRÓXIMA">
-    </div>
+</form>
+    
     <div class="voltar">
         <input type="button" value=" VOLTAR">
     </div>

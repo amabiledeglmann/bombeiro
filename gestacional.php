@@ -21,7 +21,7 @@ $nome=$_POST["nome"];
 
 $comando = $pdo->prepare("INSERT INTO gestacional VALUES ('$periodo', '$natal', '$medico', '$complicacoes', '$primeiro', '$quantos','$contracoes', '$tempo', '$intervalo', '$evacuar', '$bolsa', '$visual','$parto', '$nascimento', '$sexo', '$nome')");
 $resultado = $comando->execute();
-header("Location:anamnese.html");
+header("Location:cinematica.html");
 
 
 
