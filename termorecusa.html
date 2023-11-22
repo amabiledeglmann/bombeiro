@@ -172,12 +172,12 @@
     <div class="caixatermo">
         <span class="titulotermo"> TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE </span>
     </div>
-    <form method="post" action="">
+    <form method="post" action="termo.php">
         <div class="caixainforma">
           <div class="textorecusa">
             <br>
-            EU, <input type="text" style="width: 700px;"> <br>
-            PORTADOR DA IDENTIDADE N° <input type="text"  style="width: 445px;"> <br>
+            EU, <input name=nome type="text" style="width: 700px;"> <br>
+            PORTADOR DA IDENTIDADE N° <input name=identidade type="text"  style="width: 445px;"> <br>
             NA QUALIDADE DE VITIMA/PACIENTE, USANDO DOS DIREITOS QUE ALEI ME GARANTE,<br>
              ME RECUSO NESTE ATO OATENDIMENTO E/OU TRANSPORTE OFERECIDO PELOS <br>
               BOMBEIROS VOLUNTARIOS DE GUARAMIRIM/SC, E ASSUMO, INDIVIDUALMENTE A <br>
@@ -186,21 +186,20 @@
                PROCEDIMENTO PELO QUAL EU DEVERIA ME SUBMETER E ALERTADO SOBRE OS RISCOS <br>
                 À SAÚDE DA SUA NÃO REALIZAÇÃO.
                 <br><br>
-                ASS: <input type="text" style="width: 600px;"><BR>
-                TESTEMUNHA: <input type="text" style="width: 600px;"><BR>
-               DOC: <input type="text" style="width: 600px;"><BR>
-               TESTEMUNHA: <input type="text" style="width: 600px;"><BR>
-               DOC: <input type="text" style="width: 600px;"><BR>
+                ASS: <input name=ass type="text" style="width: 600px;"><BR>
+                TESTEMUNHA: <input name= testemunha type="text" style="width: 600px;"><BR>
+               DOC: <input name=doc type="text" style="width: 600px;"><BR>
+               TESTEMUNHA: <input name= testemunha2 type="text" style="width: 600px;"><BR>
+               DOC: <input name= doc2 type="text" style="width: 600px;"><BR>
 
           </div>
+          <input type="submit" value=" GRAVAR" class="btn" />
         </div>
-        <div class="proximo">
-            <input type="button" value=" PRÓXIMA">
-        </div>
+        
         <div class="voltar">
             <input type="button" value=" VOLTAR">
         </div>
-
+      
     </form>
 
 </body>
