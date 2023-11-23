@@ -10,4 +10,4 @@ $doc2= $_POST["doc2"];
 
 $comando = $pdo->prepare("INSERT INTO termo VALUES ('$nome','$identidade', '$ass', '$testemunha', '$doc', '$testemunha2', '$doc2')");
 $resultado = $comando->execute();
-header("Location:cinematica.html");
+header("Location:listagem.php");
