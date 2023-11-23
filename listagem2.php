@@ -19,18 +19,18 @@
         $resultado = $comando->execute();
     
         // para voltar no forms
-        header("Location: listagem2.php");
+        header("Location: listagem.php");
     }
     if(isset($_POST["excluir"]))
     {
         $comando = $pdo->prepare("DELETE FROM dados1 where rg='$rg'");
         $resultado = $comando->execute();
-        header("Location: listagem2.php");
+        header("Location: listagem.php");
         }
     if(isset($_POST["alterar"]))
     {
         $comando = $pdo->prepare("UPDATE dados1 SET data='$data', sexo='$sexo', hospital='$hospital', nome='$nome', idade='$idade',rg='$rg', phone='$phone', local_ocorrencia='$local_ocorrencia', nome_acompanhante='$nome_acompanhante', idade_acompanhante='$idade_acompanhante' WHERE rg='$rg'");
         $resultado = $comando->execute();
-        header("Location: listagem2.php");
+        header("Location: listagem.php");
         }
 ?>
